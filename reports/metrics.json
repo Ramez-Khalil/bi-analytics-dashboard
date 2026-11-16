@@ -1,0 +1,85 @@
+{
+  "source_sha256": "16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91",
+  "rows": 7043,
+  "churned": 1869,
+  "churn_rate": 0.2653698707936959,
+  "train_rows": 4930,
+  "test_rows": 2113,
+  "seed": 42,
+  "missing_total_charges": 11,
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "Contract",
+    "InternetService",
+    "PaymentMethod",
+    "PaperlessBilling",
+    "PhoneService",
+    "MultipleLines",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies"
+  ],
+  "metrics": {
+    "Majority baseline": {
+      "accuracy": 0.73450070989115,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "average_precision": 0.26549929010885,
+      "confusion_matrix": [
+        [
+          1552,
+          0
+        ],
+        [
+          561,
+          0
+        ]
+      ]
+    },
+    "Logistic regression": {
+      "accuracy": 0.8064363464268812,
+      "precision": 0.6603375527426161,
+      "recall": 0.5579322638146168,
+      "f1": 0.6048309178743961,
+      "roc_auc": 0.8452339112777257,
+      "average_precision": 0.6424886119394574,
+      "confusion_matrix": [
+        [
+          1391,
+          161
+        ],
+        [
+          248,
+          313
+        ]
+      ]
+    },
+    "Decision tree": {
+      "accuracy": 0.7941315664931378,
+      "precision": 0.6145454545454545,
+      "recall": 0.6024955436720143,
+      "f1": 0.6084608460846085,
+      "roc_auc": 0.8295253551279929,
+      "average_precision": 0.6169800590618885,
+      "confusion_matrix": [
+        [
+          1340,
+          212
+        ],
+        [
+          223,
+          338
+        ]
+      ]
+    }
+  },
+  "split_overlap": 0,
+  "train_total_charges_median": 1389.2
+}
